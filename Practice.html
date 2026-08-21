@@ -3,12 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Practice Question 8</title>
+    <title>Practice Question 9</title>
 </head>
 <body>
-    <form action="https://www.google.com/search?q=">
-        <input type="text" name="q" placeholder="Search Google"/>
-        <button type="submit">Search</button>
+    <h1>Registration Form</h1>
+    <form action="/server">
+        <div>
+            <label for="first"></label>
+            <input type="text" id="first" name="first" placeholder="First Name">
+            <label for="last"></label>
+            <input type="last" id="last" name="last" placeholder="Last Name">
+        </div>
+        <div>
+            <label for="gender">Please select your gender</label>
+            <select name="gender" id="gender">
+                <option value="male" selected>Male</option>
+                <option value="female">Female</option>
+                <option value="others">Others</option>
+            </select>
+        </div>
+        <div>
+            Do you agree to all term of services?
+            <input type="checkbox" id="checkbox" name="checkbox">
+            <label for="checkbox">Yes,I agree</label>
+        </div>
+        <button type="submit">Register</button>
     </form>
 </body>
 </html>
