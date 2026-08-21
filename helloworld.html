@@ -35,11 +35,14 @@
         <div>
             Select a profession
             <select name="profession" id="profession">
+                <option>Select your option</option>
                 <option value="stu">Student</option>
                 <option value="dev">Developer</option>
             </select>
         </div>
-    <button type="submit">Submit</button>
+        <label for="vol">Select your volume</label>
+        <input type="range" name="vol" id="vol" min="0" max="100" step="10">
+        <button type="submit">Submit</button>
     </form>
 
 
