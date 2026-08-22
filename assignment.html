@@ -7,39 +7,35 @@
     <title>Assignment</title>
 </head>
 <body>
+    <h1><b>Feedback Form</b></h1>
     <form action="/action">
         <div>
             <label for="name">Name:</label>
-            <input type="text" id="name" name="name">
+            <input type="text" id="name" name="name" placeholder="Write your name">
         </div><br>
         <div>
-            Sex:
-            <input type="radio" name="gender" id="m" value="m">
-            <label for="m">Male</label>
-            <input type="radio" name="gender" id="f" value="f">
-            <label for="f">Female</label>
-        </div><br>
-        <div>
-            <label for="country">Country
-                <select id="country" name="country">
-                    <option value="ind">India</option>
-                    <option value="can">Canada</option>
-                    <option value="usa">USA</option>
-                    <option value="frn">France</option>
-                    <option value="itl">Italy</option>
-                    <option value="select" selected>Select an option</option>
-                </select>
-            </label>
+            <label for="mail">Email:</label>
+            <input type="text" id="mail" name="mail" placeholder="Write your Email">
         </div><br>
         <div>
             <label for="mess">Message:</label><br>
             <textarea id="mess" name="mess"></textarea>
         </div><br>
         <div>
-            <input type="checkbox" id="subs" name="subs">
-            <label for="subs">Subscribe?</label>
+            Rate us out of 5:<br>
+            <label for="1">1</label>
+                <input type="radio" id="1" name="rate" value="1"><br>
+            <label for="2">2</label>
+                <input type="radio" id="2" name="rate" value="2"><br>
+            <label for="3">3</label>
+                <input type="radio" id="3" name="rate" value="3"><br>
+            <label for="4">4</label>
+                <input type="radio" id="4" name="rate" value="4"><br>
+            <label for="5">5</label>
+                <input type="radio" id="5" name="rate" value="5">
         </div><br>
-        <button type="submit">Submit</button>
+
+        <button type="submit">Send your message</button>
     </form>
 </body>
 </html>
