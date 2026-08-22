@@ -7,37 +7,39 @@
     <title>Assignment</title>
 </head>
 <body>
-    <table border="black">
-        <caption>Student Information</caption>
-        <tr>
-            <th rowspan="6">Info</th>
-            <th rowspan="2">Name</th>
-            <th colspan="2">Address</th>
-        </tr>
-        <tr>
-            <th>City</th>
-            <th>House</th>
-        </tr>
-        <tr>
-            <td>A</td>
-            <td>Delhi</td>
-            <td>1</td>
-        </tr>
-        <tr>
-            <td>B</td>
-            <td>Kolkata</td>
-            <td>2</td>
-        </tr>
-        <tr>
-            <td>C</td>
-            <td>Mumbai</td>
-            <td>3</td>
-        </tr>
-        <tr>
-            <td>D</td>
-            <td>Pune</td>
-            <td>4</td>
-        </tr>
-    </table>
+    <form action="/action">
+        <div>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name">
+        </div><br>
+        <div>
+            Sex:
+            <input type="radio" name="gender" id="m" value="m">
+            <label for="m">Male</label>
+            <input type="radio" name="gender" id="f" value="f">
+            <label for="f">Female</label>
+        </div><br>
+        <div>
+            <label for="country">Country
+                <select id="country" name="country">
+                    <option value="ind">India</option>
+                    <option value="can">Canada</option>
+                    <option value="usa">USA</option>
+                    <option value="frn">France</option>
+                    <option value="itl">Italy</option>
+                    <option value="select" selected>Select an option</option>
+                </select>
+            </label>
+        </div><br>
+        <div>
+            <label for="mess">Message:</label><br>
+            <textarea id="mess" name="mess"></textarea>
+        </div><br>
+        <div>
+            <input type="checkbox" id="subs" name="subs">
+            <label for="subs">Subscribe?</label>
+        </div><br>
+        <button type="submit">Submit</button>
+    </form>
 </body>
 </html>
